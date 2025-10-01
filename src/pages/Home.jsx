@@ -1,4 +1,7 @@
 import '../styles/Home.css'
+import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
 import profile1x from '../assets/profile.png'
 import profile2x from '../assets/profile@2x.png';
@@ -14,8 +17,8 @@ function Home() {
           srcSet={`${profile1x} 1x, ${profile2x} 2x, ${profile3x} 3x`}
           alt="Profile Pic"
           className="profile-img"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           loading="eager"
           decoding="sync"
           fetchPriority="high"
@@ -33,13 +36,35 @@ function Home() {
         </div>
       </div>
 
-      <div className='home-about-me'>
-        <span className="text-xl font-bold text-white mb-3 block border-b border-gray-600 pb-2">About Me</span>
+      <div className='about-me'>
         <span className="text-gray-300 text-sm leading-relaxed block">Hi, I'm Omansh.
           I'm a 19-year-old undergraduate Computer Science student at VIT Vellore. I like to build the things I dream of and see them through to completion. Currently, I'm exploring web development and sharpening my problem-solving skills, constantly experimenting and learning along the way.
         </span>
       </div>
-      <div className='home-links'></div>
+
+      <div className="socials">
+        <a href="https://github.com/omanshchoudhary" target="_blank" aria-label="GitHub Profile" className="icons">
+          <FaGithub />
+        </a>
+
+        <a href="https://x.com/PhantomC0der" target="_blank" aria-label="Twitter/X Profile" className="icons">
+          <FaXTwitter />
+        </a>
+
+        <a href="https://linkedin.com/in/omansh-choudhary" target="_blank" aria-label="LinkedIn Profile" className="icons">
+          <FaLinkedin />
+        </a>
+
+        <a href="https://leetcode.com/omanshchoudhary" target="_blank" aria-label="Leetcode Profile" className="icons">
+          <SiLeetcode />
+        </a>
+
+        <a href="mailto:omansh.choudhary@example.com" aria-label="Email Contact" className="icons">
+          <FaEnvelope />
+        </a>
+      </div>
+
+
     </div>
   )
 }

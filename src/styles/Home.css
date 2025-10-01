@@ -1,29 +1,30 @@
 .home {
-    width: 800px;
-    margin: 60px auto 0;
-    min-height: 500px;
-    padding: 5px;
+    width: 700px;
+    margin: 100px auto 0;
 }
 
 .home-header{
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
     width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    border: 1px solid #666;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    padding: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 
+        0 12px 30px rgba(0, 0, 0, 0.6),
+        0 8px 15px rgba(0, 0, 0, 0.4),
+        0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .profile-img{
-  width: 100px;          
-  height: 100px;
+  width: 80px;          
+  height: 80px;
   border-radius: 50%;    
   object-fit: cover;
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
   image-rendering: -webkit-optimize-contrast;
   image-rendering: -moz-crisp-edges;
   image-rendering: pixelated;
@@ -36,11 +37,40 @@
   -webkit-filter: contrast(1.05) saturate(1.1) brightness(1.02);
 }
 
+.name-username {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
 .name{
-    font-size: 1.8rem;
-    font-weight: 800px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .username{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #888888;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.socials{
+    display: flex;
+    gap: 13px;
+}
+
+.icons {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.icons:hover {
+    color: #cccccc;
+    transform: scale(1.1);
 }
